@@ -2,8 +2,8 @@ $(document).ready(function(){
     var scroll_pos = 0;
     var animation_begin_pos = 0; //where to begin animation
     var animation_end_pos = 1000; //where to stop animation
-    var beginning_color = new Color( 'rgb(255,255,255)' ); //Set up color
-    var ending_color = new Color( 'rgb(230,230,250)' ); ;//what color it should end up being
+    var beginning_color = new $.Color( 'rgb(255,255,255)' ); //Set up color
+    var ending_color = new $.Color( 'rgb(230,230,250)' ); ;//what color it should end up being
     jQuery(document).scroll(function() {
         scroll_pos = $(this).scrollTop(); 
         if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
@@ -12,7 +12,7 @@ $(document).ready(function(){
             var newRed = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled );
             var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
             var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
-            var newColor = new Color( newRed, newGreen, newBlue );
+            var newColor = new $.Color( newRed, newGreen, newBlue );
             //change to the new color
             jQuery('div').animate({ backgroundColor: newColor }, 0);
             //if at the end of the div
