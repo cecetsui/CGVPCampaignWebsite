@@ -1,0 +1,101 @@
+html, body {
+	background: url("test.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: 100%;
+  font-family:Coming Soon;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(230,230,250);
+}
+
+
+nav {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+
+nav ul {
+    list-style: none;
+    width: inherit; 
+    margin: 0; 
+}
+
+ul li {
+    display: inline-block; 
+    margin: 0 8px;
+    margin: 0 0.5rem;
+    padding: 5px 8px;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px; 
+    line-height: 1.5;
+}
+
+article li {
+	list-style:none;
+}
+
+.pad {
+	padding-top: 30px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: gray;
+  text-align: center;
+  font-size: 15px;
+  font-family: Coming Soon;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.contain{
+  padding-top:200px;
+  height:350px;
+}
+
+.contain2 {
+  padding-top:300px;
+  height:500px;
+}
