@@ -12,7 +12,7 @@ $(document).ready(function(){
             var newRed = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled );
             var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
             var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
-            var newColor = new $.Color( newRed, newGreen, newBlue );
+            var newColor = new Color( newRed, newGreen, newBlue );
             //change to the new color
             jQuery('div').animate({ backgroundColor: newColor }, 0);
             //if at the end of the div
