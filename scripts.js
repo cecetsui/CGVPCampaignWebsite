@@ -2,8 +2,8 @@ $(document).ready(function(){
     var scroll_pos = 0;
     var animation_begin_pos = 0; //where to begin animation
     var animation_end_pos = 1000; //where to stop animation
-    var beginning_color = new $.Color( 'rgb(255,255,255)' ); //Set up color
-    var ending_color = new $.Color( 'rgb(230,230,250)' ); ;//what color it should end up being
+    var beginning_color = new Color( 'rgb(255,255,255)' ); //Set up color
+    var ending_color = new Color( 'rgb(230,230,250)' ); ;//what color it should end up being
     jQuery(document).scroll(function() {
         scroll_pos = $(this).scrollTop(); 
         if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
